@@ -1,0 +1,22 @@
+---
+import './src/styles/global.css'
+import Navigation from '../../src/components/Navigation.tsx'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Carlos Rojas Personal Trainer</title>
+	</head>
+	<body>
+	 <div id="header" class="bg-black text-white">
+		<Navigation client:load/>
+	 </div>
+
+		<slot />
+	</body>
+</html>

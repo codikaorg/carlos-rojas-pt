@@ -1,0 +1,41 @@
+---
+const offers = [
+  {
+    title: "50% off on first purchase",
+    description: "Get 50% off on your first order with us. Use code FIRST50 at checkout.",
+    image: "/images/offer1.png",
+  },
+  {
+    title: "Free shipping on orders over $50",
+    description: "Enjoy free shipping on all orders over $50. No code needed.",
+    image: "/images/offer2.png",
+  },
+  {
+    title: "Buy one get one free",
+    description: "Buy one item and get another one for free. Limited time offer!",
+    image: "/images/offer3.png",
+  },
+    {
+    title: "Buy one get one free",
+    description: "Buy one item and get another one for free. Limited time offer!",
+    image: "/images/offer4.png",
+  },
+];
+---
+<section class="dark:bg-[#202737] flex flex-col 171e2e">
+    <div class="flex flex-col p-10 justify-center items-center gap-4">
+        <h2 class="text-3xl font-bold text-white text-center">QUÉ TE <span class="text-[#d8fb00]">OFREZCO</span></h2>
+        <p class="text-white text-center">Aprovecha nuestras ofertas especiales y promociones exclusivas para nuestros clientes. ¡No te las pierdas!</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-4 p-4">
+        {
+            offers.map((offer) => (
+                <div class="text-white p-4 m-2 gap-4">
+                    <img src={offer.image} alt={offer.title} class="w-full h-72 object-cover rounded-t-lg" />
+                    <h3 class=" text-xl font-semibold mt-2">{offer.title}</h3>
+                    <p class="">{offer.description}</p>
+                </div>
+            ))
+        }
+    </div>
+</section>
