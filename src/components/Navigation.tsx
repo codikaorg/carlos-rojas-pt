@@ -93,43 +93,37 @@ export default function Navigation() {
       <div className={`${isOpen ? "block" : "hidden"} md:hidden`} id="mobile-menu">
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <a
-            href="/sobre"
+            href="#inicio"
             className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Inicio
           </a>
           <a
-            href="/sobre"
+            href="#acerca"
             className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Sobre
+            Acerca
           </a>
           <a
-            href="/servicos"
+            href="#beneficios"
             className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Beneficios
           </a>
           <a
-            href="/contato"
+            href="#planes"
             className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Servicios
+            Planes
           </a>
           <a
-            href="/blog"
-            className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Precios
-          </a>
-          <a
-            href="/login"
+            href="#testimonios"
             className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Testimonios
           </a>
           <a
-            href="/cadastro"
+            href="#contacto"
             className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Contacto
