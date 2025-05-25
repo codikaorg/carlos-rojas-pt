@@ -18,43 +18,37 @@ export default function Navigation() {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
                 <a
-                  href="/sobre"
+                  href="#inicio"
                   className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Inicio
                 </a>
                 <a
-                  href="/sobre"
+                  href="#acerca"
                   className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Sobre
+                  Acerca
                 </a>
                 <a
-                  href="/servicos"
+                  href="#beneficios"
                   className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Beneficios
                 </a>
                 <a
-                  href="/contato"
+                  href="#planes"
                   className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Servicios
+                  Planes
                 </a>
                 <a
-                  href="/blog"
-                  className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                >
-                  Precios
-                </a>
-                <a
-                  href="/login"
+                  href="#testimonios"
                   className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Testimonios
                 </a>
                 <a
-                  href="/cadastro"
+                  href="#contacto"
                   className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Contacto

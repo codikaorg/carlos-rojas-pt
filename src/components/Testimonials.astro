@@ -24,15 +24,15 @@ const testimonials = [
 ];
 ---
 
-<section class="bg-slate-800 text-white py-16">
+<section id="testimonios" class="bg-slate-800 text-white py-16">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="text-center text-5xl font-bold mb-2 text-[#cfff13]">LO QUE NUESTROS CLIENTES DICEN</h2>
     <p class="text-center mb-8 text-lg">Descubre lo que nuestros miembros opinan sobre su experiencia entrenando con Carlos Rojas.</p>
 
     <div class="flex items-center justify-between mt-8">
-      <button class="bg-gray-800 text-white border-none p-4 rounded-full cursor-pointer text-2xl hover:bg-gray-700 transition-colors">&larr;</button>
+      <!-- <button class="bg-gray-800 text-white border-none p-4 rounded-full cursor-pointer text-2xl hover:bg-gray-700 transition-colors">&larr;</button> -->
 
-      <div class="flex overflow-hidden w-full mx-4 space-x-6">
+      <div class="flex flex-col md:flex-row w-full mx-4 space-x-6 gap-6">
     {
       testimonials.map((testimonial) => (
         <div class="flex-1 bg-slate-700 rounded-xl shadow-lg p-8 flex flex-col items-center mx-2">
@@ -52,7 +52,7 @@ const testimonials = [
  
       </div>
 
-      <button class="bg-gray-800 text-white border-none p-4 rounded-full cursor-pointer text-2xl hover:bg-gray-700 transition-colors">&rarr;</button>
+      <!-- <button class="bg-gray-800 text-white border-none p-4 rounded-full cursor-pointer text-2xl hover:bg-gray-700 transition-colors">&rarr;</button> -->
     </div>
   </div>
 </section>
