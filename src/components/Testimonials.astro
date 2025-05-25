@@ -1,0 +1,58 @@
+---
+const testimonials = [
+    {
+        name: "Theresa Webb",
+        title: "Diseñadora Web",
+        stars: 5,
+        text: "Entrenar con Carlos Rojas ha sido una experiencia increíble. Su dedicación y conocimiento me han ayudado a alcanzar metas que pensé imposibles. ¡Lo recomiendo totalmente!",
+        picture: "picture1.png"
+    },
+    {
+        name: "Albert Flores",
+        title: "Coordinador de Marketing",
+        stars: 5,
+        text: "Gracias a Carlos Rojas he mejorado mi salud y mi bienestar. Sus rutinas son personalizadas y siempre está atento a mis necesidades. Es un entrenador excepcional.",
+        picture: "picture2.png"
+    },
+    {
+        name: "Esther Howard",
+        title: "Presidenta de Ventas",
+        stars: 5,
+        text: "Carlos Rojas no solo me ha ayudado físicamente, también ha sido un gran apoyo para mi motivación. Su profesionalismo y pasión hacen la diferencia en cada sesión.",
+        picture: "picture3.png"
+    }
+];
+---
+
+<section class="bg-slate-800 text-white py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-center text-5xl font-bold mb-2 text-[#cfff13]">LO QUE NUESTROS CLIENTES DICEN</h2>
+    <p class="text-center mb-8 text-lg">Descubre lo que nuestros miembros opinan sobre su experiencia entrenando con Carlos Rojas.</p>
+
+    <div class="flex items-center justify-between mt-8">
+      <button class="bg-gray-800 text-white border-none p-4 rounded-full cursor-pointer text-2xl hover:bg-gray-700 transition-colors">&larr;</button>
+
+      <div class="flex overflow-hidden w-full mx-4 space-x-6">
+    {
+      testimonials.map((testimonial) => (
+        <div class="flex-1 bg-slate-700 rounded-xl shadow-lg p-8 flex flex-col items-center mx-2">
+          <img src={`/images/${testimonial.picture}`} alt={testimonial.name} class="w-20 h-20 rounded-full mb-4 object-cover" />
+          <h3 class="text-xl font-semibold mb-1">{testimonial.name}</h3>
+          <p class="text-sm text-gray-300 mb-3">{testimonial.title}</p>
+          <div class="text-yellow-400 mb-3 text-lg">
+            {"★".repeat(testimonial.stars)}
+          </div>
+          <p class="text-base leading-relaxed text-center">{testimonial.text}</p>
+        </div>
+      ))
+    }
+
+
+
+ 
+      </div>
+
+      <button class="bg-gray-800 text-white border-none p-4 rounded-full cursor-pointer text-2xl hover:bg-gray-700 transition-colors">&rarr;</button>
+    </div>
+  </div>
+</section>
